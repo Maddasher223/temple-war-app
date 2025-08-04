@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Avatar: Realms Collide - Temple War Team Builder&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Inter', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #f0f4f8; /* Light blue-gray background */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.loader {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 5px solid #e2e8f0; /* light grey */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-top: 5px solid #4a5568; /* dark grey */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 50px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 50px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>animation: spin 1s linear infinite;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 20px auto;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>@keyframes spin {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>0% { transform: rotate(0deg); }</p>
+<p class="p1"><span class="Apple-converted-space">            </span>100% { transform: rotate(360deg); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.result-card {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.result-card h3 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.25rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #2d3748; /* very dark grey */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.result-card h4 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #4a5568; /* dark grey */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 0.75rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body class="text-gray-800"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;header class="bg-white shadow-md"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container mx-auto p-6 text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2"&gt;Temple War Team Builder&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-md text-gray-600"&gt;Select the heroes you own, and our AI strategist will recommend the best 3-person squads for Temple Wars.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;main class="container mx-auto p-4 md:p-8"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="hero-roster" class="mb-8 bg-white p-6 rounded-lg shadow-lg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="text-2xl font-bold mb-4 text-gray-700"&gt;Step 1: Select Your Available Heroes&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="hero-selection-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="generate-section" class="text-center mb-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button id="generateBtn" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-blue-700 transition-colors shadow-lg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>Generate Temple War Teams</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="results-container" class="hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="text-2xl font-bold mb-4 text-center text-gray-700"&gt;Step 2: Your Custom Team Recommendations&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="loader" class="loader hidden"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="results-output"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/main&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;footer class="text-center p-6 mt-8 text-gray-500 text-sm"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;This tool uses AI to generate recommendations. Always consider your hero levels and equipment.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const allHeroes = [</p>
+<p class="p1"><span class="Apple-converted-space">            </span>'Aang', 'Amon', 'Asami Sato', 'Azula', 'Borte', 'Bumi', 'Katara (PL)', 'Katara (WBM)',<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>'King Bumi', 'Korra', 'Kuei', 'Kuvira', 'Kyoshi', 'Lin Beifong', 'Mako', 'Meelo',<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>'Piandao', 'Roku', 'Sokka', 'Suki', 'Tenzin', 'Teo', 'Toph', 'Unalaq', 'Uncle Iroh',<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>'Yangchen', 'Yue', 'Zuko'</p>
+<p class="p1"><span class="Apple-converted-space">        </span>];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>const heroSelectionGrid = document.getElementById('hero-selection-grid');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>allHeroes.forEach(hero =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const div = document.createElement('div');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>div.className = 'flex items-center p-2 bg-gray-50 rounded-md border border-gray-200';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const checkbox = document.createElement('input');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>checkbox.type = 'checkbox';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>checkbox.id = hero;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>checkbox.value = hero;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>checkbox.className = 'w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const label = document.createElement('label');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>label.htmlFor = hero;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>label.textContent = hero;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>label.className = 'ml-3 text-sm font-medium text-gray-800';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>div.appendChild(checkbox);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>div.appendChild(label);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>heroSelectionGrid.appendChild(div);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>const generateBtn = document.getElementById('generateBtn');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const resultsContainer = document.getElementById('results-container');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const resultsOutput = document.getElementById('results-output');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const loader = document.getElementById('loader');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>generateBtn.addEventListener('click', async () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const selectedHeroes = Array.from(heroSelectionGrid.querySelectorAll('input[type=checkbox]:checked')).map(cb =&gt; cb.value);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (selectedHeroes.length &lt; 3) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>resultsContainer.classList.remove('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>resultsOutput.innerHTML = `&lt;p class="text-red-500 text-center font-semibold"&gt;Please select at least 3 heroes to form a team.&lt;/p&gt;`;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>return;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>resultsContainer.classList.remove('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>resultsOutput.innerHTML = '';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>loader.classList.remove('hidden');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>const systemPrompt = "You are an expert strategist for the game 'Avatar: Realms Collide'. You will be given a list of owned heroes and must create optimized 3-person teams for Temple War battles. Your response must be in JSON format.";</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const userPrompt = `</p>
+<p class="p1"><span class="Apple-converted-space">                </span>My owned heroes are: ${selectedHeroes.join(', ')}.</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>Based ONLY on the heroes from this list, generate at least five 3-person team combinations that are optimized for Temple War battles.<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>For each team, provide a name, the composition, and a brief strategy explaining why it's effective for either offense (capturing a temple) or defense (holding a temple).</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>Your response must be a single JSON object with a key "teams", which is an array of objects. Each object in the array must have these keys: "teamName", "composition", and "strategy".</p>
+<p class="p1"><span class="Apple-converted-space">            </span>`;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>try {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const apiKey = ""; // IMPORTANT: REPLACE WITH YOUR OPENAI API KEY</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const apiUrl = "https://api.openai.com/v1/chat/completions";</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>const payload = {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>model: "gpt-3.5-turbo-1106", // A model that supports JSON mode</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>response_format: { "type": "json_object" },</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>messages: [</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>{ "role": "system", "content": systemPrompt },</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>{ "role": "user", "content": userPrompt }</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>]</p>
+<p class="p1"><span class="Apple-converted-space">                </span>};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>const response = await fetch(apiUrl, {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>method: 'POST',</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>headers: {<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>'Content-Type': 'application/json',</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>'Authorization': `Bearer ${apiKey}`</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>body: JSON.stringify(payload)</p>
+<p class="p1"><span class="Apple-converted-space">                </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (!response.ok) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>throw new Error(`API request failed with status ${response.status}`);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>const result = await response.json();</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (result.choices &amp;&amp; result.choices.length &gt; 0 &amp;&amp; result.choices[0].message) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const content = result.choices[0].message.content;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const parsedJson = JSON.parse(content);</p>
+<p class="p2"><span class="Apple-converted-space">                    </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>if (parsedJson.teams &amp;&amp; parsedJson.teams.length &gt; 0) {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>displayResults(parsedJson.teams);</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>throw new Error("No teams were generated in the response.");</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>throw new Error("Invalid response structure from API.");</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>} catch (error) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>console.error("Error fetching team recommendations:", error);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>resultsOutput.innerHTML = `&lt;p class="text-red-500 text-center font-semibold"&gt;An error occurred while generating teams. Please check your API key and try again.&lt;/p&gt;`;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} finally {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>loader.classList.add('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function displayResults(teams) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let html = '';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>teams.forEach(team =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>html += `</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="result-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3&gt;${team.teamName}&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h4&gt;Composition: ${team.composition.join(', ')}&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="prose prose-sm max-w-none mt-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                           </span>${marked.parse(team.strategy)}</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>`;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">            </span>resultsOutput.innerHTML = html;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
